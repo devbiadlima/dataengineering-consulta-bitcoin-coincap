@@ -1,1 +1,0 @@
-# dataengineering-consulta-bitcoin-coincap
