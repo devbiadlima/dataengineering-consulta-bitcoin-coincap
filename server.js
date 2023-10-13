@@ -1,3 +1,5 @@
+/** CONSULTA API COINCAP */
+
 const option = {
     method: "GET",
     mode: 'cors',
@@ -9,8 +11,10 @@ fetch('https://api.coincap.io/v2/assets/bitcoin', option)
         .then( data => console.log(data))})
         .catch(e => console.log('Deu Erro: '+ e,message));
 
-        
 
+//** ENVIO DE E-MAIL */
+
+//** CONFIGURAÇÕES DE E-MAIL */
 const nodemailer = require('nodemailer');
 
 const transporter = nodemailer.createTransport({
@@ -26,6 +30,7 @@ const transporter = nodemailer.createTransport({
     },
 });
 
+//** ENVIO DO E-MAIL */
 async function run(){
     const mailSent = await transporter.sendMail({
         text: 'Alerta cotação Bitcoin',
