@@ -24,6 +24,11 @@ Descrição de como utilizar a API construída.
 
 Links das documentações e materias de apoio utilizados para a construção da API.
 
-## Integrantes
+## Integrantes do Projeto
+
+Amanda Carolini - RA 2300540
+Bianca Pereira - RA 2301749
+Marcos Duarte - RA 2301819
+Raul Lobo - RA 2302261
 
 Nome e RM dos integrantes do grupo.
