@@ -2,20 +2,20 @@
 
 # API de Consulta ao Coincap com Ingestão e Análise de Dados ₿
 
-Projeto de CRUD feito em NodeJS usando Express e MySQL. A aplicação coleta os dados referentes ao Bitcoin através da plataforma Coincap e carrega as informações diretamente em um banco RDS na AWS para análise. Quando o valor atinge um valor abaixo de R$130.000,00, um e-mail de alerta é enviado.
+Projeto de CRUD feito em Node.js usando Express e MySQL. A aplicação coleta os dados referentes ao Bitcoin através da plataforma Coincap e carrega as informações diretamente em um banco RDS na AWS para análise. Quando o valor atinge um valor abaixo de R$130.000,00, um e-mail de alerta é enviado.
 
 ## Tecnologias
 
 ### Framework
-O Node JS é uma plataforma para desenvolvimento de aplicações server-side baseadas em rede utilizando JavaScript e o V8 JavaScript Engnne, usa um modelo de I/O direcionada a evento não bloqueante que o torna leve e eficiente.
+O Node.js é uma plataforma para desenvolvimento de aplicações server-side baseadas em rede utilizando JavaScript e o V8 JavaScript Engnne, usa um modelo de I/O direcionada a evento não bloqueante que o torna leve e eficiente.
 Ideal para aplicações em tempo real com troca intensa de dados através de dispositivos distribuídos.<br>
 
 ### Tecnologias e requisitos básicos para poder utilizá-lo
-* [NodeJS](https://nodejs.org)
+* [Node.js](https://nodejs.org)
 * [Xampp](https://www.apachefriends.org)
 * [Postman](https://www.getpostman.com)
 * [MySQL](https://database-client.com/#/home) - Extension
-* [Banco_de_Dados_AWS_RDS](mba-es25.cwudjjjzg4mm.sa-east-1.rds.amazonaws.com)
+* [Banco de Dados AWS RDS](mba-es25.cwudjjjzg4mm.sa-east-1.rds.amazonaws.com)
 * [Email_Remetente](alertabitcoincap@outlook.com)
   
 ## Desvantagens
@@ -45,14 +45,32 @@ Para verificar o funcionamento, basta acessar `http://localhost:3000`.<br>
 E para utilizar no Postman, acessar a rota: `http://localhost:3000/cotacao`.<br>
 Todos os outros comandos podem ser executados pelo Postman alterando a rota.
 
+## Viabilidade da Solução
+
+De acordo com a visão que tivemos ao construir esse projeto, podemos destacar os seguintes pontos:
+
+* Tecnologias Utilizadas: A escolha de tecnologias como Node.js, Express e MySQL torna o projeto viável, uma vez que essas tecnologias são amplamente utilizadas e nos fornecem uma boa documentação.
+* Coleta e Armazenamento de Dados: A solução demonstra capacidade para coletar dados do Coincap e armazená-los em um banco de dados RDS MySQL na AWS, o que é fundamental para a análise de dados do Bitcoin.
+* Alertas por E-mail: A capacidade de enviar alertas por e-mail quando o valor do Bitcoin cai abaixo de um limite específico é uma característica importante para o monitoramento das flutuações do Bitcoin.
+
+## Potenciais Adicionais
+* Testes Unitários/Integrados:
+Inclusão de testes unitários e de integração para cada parte da solução, incluindo a coleta de dados, análise e envio de e-mails de alerta. Os testes garantem que sejam realizadas melhorias contínuas em termos de confiabilidade e qualidade do código.
+* Escalabilidade:
+Considerar a escalabilidade indica que nosso projeto apresenta capacidade para expansão e tratamento de volumes maiores de dados, portanto, pode crescer com a demanda.
+* Monitoramento:
+Podem ser implementadas ferramentas de monitoramento no futuro, garantindo compromisso com a manutenção da aplicação.
+* Aprimoramentos:
+Podem ser implementadas funcionalidades adicionais, como notificações por SMS e análises mais avançadas, por exemplo.
+
 ## Material de Apoio
 
 ### Documentação
-* NodeJS em inglês [NodeJS Docs](https://nodejs.org/en/docs/)  <br>
+* Node.js em inglês [Node.js Docs](https://nodejs.org/en/docs/)  <br>
 * Express em português [Express](http://expressjs.com/pt-br/)
 
 ### Criar novo projeto (caso queira fazer do zero).
-Após instalar o NodeJS, abrir o cmd ou terminal e executar o comando `npm install express-generator -g` para instalar o Express. <br>
+Após instalar o Node.js, abrir o cmd ou terminal e executar o comando `npm install express-generator -g` para instalar o Express. <br>
 Para criar um novo projeto, basta executar `express nome_do_projeto`. <br>
 
 Uma dica é executar antes o comando `express -h` para criar um projeto com as opções que desejar. 
