@@ -20,6 +20,10 @@ Resumo das principais descobertas feitas durante o projeto e conclusão sobre a 
 
 Descrição de como utilizar a API construída.
 
+## Material de Apoio
+
+Links das documentações e materias de apoio utilizados para a construção da API.
+
 ## Integrantes
 
 Nome e RM dos integrantes do grupo.
