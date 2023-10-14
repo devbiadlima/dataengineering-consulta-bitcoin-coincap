@@ -17,6 +17,7 @@ Ideal para aplicações em tempo real com troca intensa de dados através de dis
 * [MySQL](https://database-client.com/#/home) - Extension
 * [Banco de Dados AWS RDS](mba-es25.cwudjjjzg4mm.sa-east-1.rds.amazonaws.com)
 * [Email_Remetente](alertabitcoincap@outlook.com)
+* [Nodemailer](https://nodemailer.com/about/)
   
 ## Desvantagens
 O Express cria por padrão o projeto com view em `.jade`, sendo que mudaram para `.pug`.
@@ -51,7 +52,7 @@ De acordo com a visão que tivemos ao construir esse projeto, podemos destacar o
 
 * Tecnologias Utilizadas: A escolha de tecnologias como Node.js, Express e MySQL torna o projeto viável, uma vez que essas tecnologias são amplamente utilizadas e nos fornecem uma boa documentação.
 * Coleta e Armazenamento de Dados: A solução demonstra capacidade para coletar dados do Coincap e armazená-los em um banco de dados RDS MySQL na AWS, o que é fundamental para a análise de dados do Bitcoin.
-* Alertas por E-mail: A capacidade de enviar alertas por e-mail quando o valor do Bitcoin cai abaixo de um limite específico é uma característica importante para o monitoramento das flutuações do Bitcoin.
+* Alertas por E-mail: A capacidade de enviar alertas por e-mail utilizando o módulo Nodemailer quando o valor do Bitcoin cai abaixo de um limite específico é uma característica importante para o monitoramento das flutuações do Bitcoin.
 
 ## Potenciais Adicionais
 * Testes Unitários/Integrados:
@@ -68,6 +69,7 @@ Podem ser implementadas funcionalidades adicionais, como notificações por SMS 
 ### Documentação
 * Node.js em inglês [Node.js Docs](https://nodejs.org/en/docs/)  <br>
 * Express em português [Express](http://expressjs.com/pt-br/)
+* Nodemailer em inglês [NodeMailer](https://nodemailer.com/about/)
 
 ### Criar novo projeto (caso queira fazer do zero).
 Após instalar o Node.js, abrir o cmd ou terminal e executar o comando `npm install express-generator -g` para instalar o Express. <br>
