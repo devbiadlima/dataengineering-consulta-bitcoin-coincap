@@ -41,12 +41,12 @@ tratando as mensagens via eventos no JavaScript. <br>
 ### Principais passos para instalação e configuração deste projeto
 Após clonar o projeto para executá-lo, é necessário abrir o terminal ou cmd e ir para a pasta do projeto e executar: `npm install`. 
 Após isso, no terminal, executar o comando `npm start` para executar o projeto. <br>
-Obs.: 
-    1-Caso queira debuggar o código ao invés do comando `npm start`, execute o comando `npm run dev`, que habilita o nodemon.
-        1.1-A instrução para debug está no arquivo `package.json` como ` "dev": "nodemon --inspect ./routes/cotacao.js" `.
-    2-Após essa ação, clique `Run and Debug` e selecione `nodejs` na barra superior.
+Obs.: <br>
+    1-Caso queira debuggar o código ao invés do comando `npm start`, execute o comando `npm run dev`, que habilita o nodemon.<br>
+        1.1-A instrução para debug está no arquivo `package.json` como ` "dev": "nodemon --inspect ./routes/cotacao.js" `.<br>
+    2-Após essa ação, clique `Run and Debug` e selecione `nodejs` na barra superior.<br>
 Agora pode acessar `http://localhost:3000` para verificar se esta funcionando. <br>
-E para usar no postman `http://localhost:3000/cotacao`.
+E para usar no postman `http://localhost:3000/cotacao`.<br>
 Todos os outros comandos podem ser executados pelo postam alterando a rota.
 
 ## Material de Apoio
