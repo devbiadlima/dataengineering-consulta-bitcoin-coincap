@@ -1,39 +1,46 @@
 var express = require('express');
 var router = express.Router();
 
-var textoEmail = '<div>' +
-'<span style="font-size: large;">' +
-'  <u>Alerta cotação Bitcoin</u>' +
-'</span> ' +
-'<br>' +
-'</div>' +
-'<div>' +
-'<br>' +
-'</div>' +
-'Olá.' +
-'<div>' +
-'<br>' +
-'</div>' +
-'<div>' +
-'<div>O valor de cotação do ' +
-'  <span class="Lm ng" data-ddnwab="PR_1_0" aria-invalid="grammar">BITCOIN</span> caiu para menos de R$ 130.000,00.' +
-'</div>' +
-'</div>' +
-'<div>' +
-'<br>' +
-'</div>' +
-'<div>Atenciosamente.</div>' +
-'<div>' +
-'<br>' +
-'</div>' +
-'<div>' +
-'<em>' +
-'  <strong>Equipe ' +
-'    <span class="LI ng" data-ddnwab="PR_3_0" aria-invalid="spelling">Filantroplanta</span>.' +
-'  </strong>' +
-'</em>' +
-'</div>';
+function textoEmail(cotacaoAtual) {
+    var textoEmail = '<div>' +
+        '  <span style="font-size: large;">' +
+        '    <u>Alerta cotação Bitcoin</u>' +
+        '  </span> ' +
+        '  <br>' +
+        '</div>' +
+        '<div>' +
+        '  <br>' +
+        '</div>' +
+        'Olá.' +
+        '<div>' +
+        '  <br>' +
+        '</div>' +
+        '<div>' +
+        '  <div>O valor de cotação do ' +
+        '    <span class="Lm ng" data-ddnwab="PR_7_0" aria-invalid="grammar">BITCOIN</span> caiu para menos de R$ 130.000,00.' +
+        '  </div>' +
+        '  <div>' +
+        '    <br>' +
+        '  </div>' +
+        '  <div>Cotação Atual: R$ ' + cotacaoAtual + '.</div>' +
+        '</div>' +
+        '<div>' +
+        '  <br>' +
+        '</div>' +
+        '<div>Atenciosamente.</div>' +
+        '<div>' +
+        '  <br>' +
+        '</div>' +
+        '<div>' +
+        '  <em>' +
+        '    <strong>Equipe ' +
+        '      <span class="LI ng" data-ddnwab="PR_9_0" aria-invalid="spelling">Filantroplanta</span>.' +
+        '    </strong>' +
+        '  </em>' +
+        '</div>';
 
+    return textoEmail;
+}
 
 // Listar Cotacao_Bitcoin
 router.get('/', function (req, res, next) {
@@ -87,6 +94,8 @@ router.post('/', function (req, res, next) {
 
             if (brl_value < 140000) {
                 send_email = 'S';
+                var cotacaoAtual = parseFloat(brl_value).toFixed(2).toString();
+                var textoFormatado = textoEmail(cotacaoAtual);
 
                 const nodemailer = require('nodemailer');
 
@@ -105,13 +114,11 @@ router.post('/', function (req, res, next) {
 
                 async function run() {
                     const mailSent = await transporter.sendMail({
-                        html: textoEmail,
+                        html: textoFormatado,
                         subject: 'Alerta cotação Bitcoin',
                         from: 'alertabitcoincap@outlook.com',
                         to: ['marcos.duarte@aluno.faculdadeimpacta.com.br, raul.corrales@aluno.faculdadeimpacta.com.br, amanda.carolini@aluno.faculdadeimpacta.com.br, bianca.lourenco@aluno.faculdadeimpacta.com.br']
                     });
-
-                    console.log(mailSent);
                 }
 
                 run();
