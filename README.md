@@ -1,4 +1,4 @@
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=%20CONCLUÍDO&color=GREEN&style=for-the-badge)
 
 # API de Consulta ao Coincap com Ingestão e Análise de Dados ₿
 
@@ -18,14 +18,10 @@ Ideal para aplicações em tempo real com troca intensa de dados através de dis
 * [Banco_de_Dados_AWS_RDS](mba-es25.cwudjjjzg4mm.sa-east-1.rds.amazonaws.com)
 * [Email_Remetente](alertabitcoincap@outlook.com)
   
-## Desafios 
-
-### Desvantagem
+## Desvantagens
 O Express cria por padrão o projeto com view em `.jade`, sendo que mudaram para `.pug`.
 
-## Descobertas
-
-### Principais vantagens
+## Principais vantagens
 * V8 JavaScript Engine: é o interpretador de JavaScript open source implementado pelo Google em C++ e utilizado pelo Chrome.<br>
 * Single threaded: Embora isso possa parecer uma desvantagem, o que se percebe ao desenvolver com Node.js é que isso simplifica extremamente a construção da aplicação. <br>
 * IO(In/Out) não-bloqueante: Com isto nenhuma tarefa pesadas de entrada e saída vai travar a aplicação,
