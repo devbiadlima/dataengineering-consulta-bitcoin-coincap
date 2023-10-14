@@ -16,6 +16,10 @@ Detalhar quaisquer limitações ou suposições feitas durante o processo de des
 
 Resumo das principais descobertas feitas durante o projeto e conclusão sobre a viabilidade e o potencial da solução desenvolvida. Ele também deve destacar quaisquer recomendações para testes ou desenvolvimentos adicionais.
 
+## Como utilizar
+
+Descrição de como utilizar a API construída.
+
 ## Integrantes
 
 Nome e RM dos integrantes do grupo.
