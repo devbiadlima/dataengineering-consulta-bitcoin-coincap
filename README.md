@@ -2,49 +2,30 @@
 
 # API de Consulta ao Coincap com Ingestão de Dados ₿
 
-Fornecer uma visão geral da solução criada  e uma breve descrição das tecnologias utilizadas.
+Projeto de CRUD feito em NodeJS usando Express e MySQL.
 
 ## Tecnologias
 
-Descrever a abordagem adotada para realização do projeto, incluindo as ferramentas e técnicas utilizadas.
-
-## Desafios 
-
-Detalhar quaisquer limitações ou suposições feitas durante o processo de desenvolvimento, destacando quaisquer pontos fortes ou fracos da tecnologia ou solução que foram utilizadas.
-
-## Descobertas
-
-Resumo das principais descobertas feitas durante o projeto e conclusão sobre a viabilidade e o potencial da solução desenvolvida. Ele também deve destacar quaisquer recomendações para testes ou desenvolvimentos adicionais.
-
-## Como utilizar
-
-Descrição de como utilizar a API construída.
-
-## Material de Apoio
-
-Links das documentações e materias de apoio utilizados para a construção da API.
-
-# NodeJS
-Projeto de CRUD feito em NodeJS usando Express e MySQL
-
-### Objetivo do framework
+### Framework
 O Node JS é uma plataforma para desenvolvimento de aplicações server-side baseadas em rede utilizando JavaScript e o V8 JavaScript Engine, usa um modelo de I/O direcionada a evento não bloqueante que o torna leve e eficiente.
 Ideal para aplicações em tempo real com troca intensa de dados através de dispositivos distribuídos.<br>
 
-### Requisitos básicos para poder utilizá-lo
+### Tecnologias e requisitos básicos para poder utilizá-lo
 * [NodeJS](https://nodejs.org)
 * [Xampp](https://www.apachefriends.org)
 * [Postman](https://www.getpostman.com)
 * [MySQL](https://database-client.com/#/home) - Extension
 * [Banco_de_Dados_AWS_RDS](mba-es25.cwudjjjzg4mm.sa-east-1.rds.amazonaws.com)
 * [Email_Remetente](alertabitcoincap@outlook.com)
+  
+## Desafios 
 
+### Desvantagem
+O Express cria por padrão o projeto com view em `.jade`, sendo que mudaram para `.pug`.
 
-### Documentação
-* NodeJS em inglês [NodeJS Docs](https://nodejs.org/en/docs/)  <br>
-* Express em português [Express](http://expressjs.com/pt-br/)
+## Descobertas
 
-### Principais vantagens do framework
+### Principais vantagens
 * V8 JavaScript Engine: é o interpretador de JavaScript open source implementado pelo Google em C++ e utilizado pelo Chrome.<br>
 * Single threaded: Embora isso possa parecer uma desvantagem, o que se percebe ao desenvolver com Node.js é que isso simplifica extremamente a construção da aplicação. <br>
 * IO(In/Out) não-bloqueante: Com isto nenhuma tarefa pesadas de entrada e saída vai travar a aplicação,
@@ -54,13 +35,12 @@ ou falha dessas tarefas ocorrem através de uma função de callback.<br>
 e permitem trafegar dados através de uma única conexão bi-direcional,
 tratando as mensagens via eventos no JavaScript. <br>
 * Comunidade Ativa
-
-### Desvantagem
-O Express cria por padrão o projeto com view em `.jade`, sendo que mudaram para `.pug`.
+  
+## Como utilizar
 
 ### Principais passos para instalação e configuração deste projeto
-Após clonar o projeto para executalo é necessário abrir o terminal ou cmd e ir para a pasta do projeto e executar: `npm install`. 
-Após novamento no terminal executar o comando `npm start` para executar o projeto. <br>
+Após clonar o projeto para executá-lo, é necessário abrir o terminal ou cmd e ir para a pasta do projeto e executar: `npm install`. 
+Após isso, no terminal, executar o comando `npm start` para executar o projeto. <br>
 Obs.: 
     1-Caso queira debuggar o código ao invés do comando `npm start`, execute o comando `npm run dev`, que habilita o nodemon.
         1.1-A instrução para debug está no arquivo `package.json` como ` "dev": "nodemon --inspect ./routes/cotacao.js" `.
@@ -68,6 +48,12 @@ Obs.:
 Agora pode acessar `http://localhost:3000` para verificar se esta funcionando. <br>
 E para usar no postman `http://localhost:3000/cotacao`.
 Todos os outros comandos podem ser executados pelo postam alterando a rota.
+
+## Material de Apoio
+
+### Documentação
+* NodeJS em inglês [NodeJS Docs](https://nodejs.org/en/docs/)  <br>
+* Express em português [Express](http://expressjs.com/pt-br/)
 
 ### Criar novo projeto (caso queira fazer do zero).
 Após instalar o nodejs abrir o cmd ou terminal e executar o comando `npm install express-generator -g` para instalar o Express. 
