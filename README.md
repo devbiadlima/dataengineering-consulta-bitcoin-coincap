@@ -2,7 +2,7 @@
 
 # API de Consulta ao Coincap com Ingestão e Análise de Dados ₿
 
-Projeto de CRUD feito em Node.js usando Express e MySQL. A aplicação coleta os dados referentes ao Bitcoin através da plataforma Coincap e carrega as informações diretamente em um banco RDS na AWS para análise. Quando o valor atinge um valor abaixo de R$130.000,00, um e-mail de alerta é enviado.
+Projeto de CRUD feito em Node.js usando Express e MySQL. A aplicação coleta os dados referentes ao Bitcoin através da plataforma Coincap e carrega as informações diretamente em um banco RDS na AWS para análise. Quando é atingido um valor abaixo de R$130.000,00, um e-mail de alerta é enviado.
 
 ## Tecnologias
 
@@ -16,10 +16,10 @@ Ideal para aplicações em tempo real com troca intensa de dados através de dis
 * [Postman](https://www.getpostman.com)
 * [MySQL](https://database-client.com/#/home) - Extension
 * [Banco de Dados AWS RDS](mba-es25.cwudjjjzg4mm.sa-east-1.rds.amazonaws.com)
-* [Email_Remetente](alertabitcoincap@outlook.com)
+* [Email Remetente](alertabitcoincap@outlook.com)
 * [Nodemailer](https://nodemailer.com/about/)
   
-## Principais vantagens
+## Principais Vantagens
 * V8 JavaScript Engine: é o interpretador de JavaScript open source implementado pelo Google em C++ e utilizado pelo Chrome.<br>
 * Single threaded: Embora isso possa parecer uma desvantagem, o que se percebe ao desenvolver com Node.js é que isso simplifica extremamente a construção da aplicação. <br>
 * IO(In/Out) não-bloqueante: Com isto nenhuma tarefa pesadas de entrada e saída vai travar a aplicação,
@@ -33,7 +33,7 @@ tratando as mensagens via eventos no JavaScript. <br>
 ## Desvantagens
 O Express cria por padrão o projeto com view em `.jade`, sendo que mudaram para `.pug`.
   
-## Como utilizar
+## Como Utilizar
 
 ### Principais passos para instalação e configuração deste projeto
 Após clonar o projeto para executá-lo, é necessário abrir o terminal ou cmd e ir para a pasta do projeto e executar: `npm install`. <br>
