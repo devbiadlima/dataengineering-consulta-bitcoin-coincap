@@ -46,6 +46,15 @@ Para verificar o funcionamento, basta acessar `http://localhost:3000`.<br>
 E para utilizar no Postman, acessar a rota: `http://localhost:3000/cotacao`.<br>
 Todos os outros comandos podem ser executados pelo Postman alterando a rota.
 
+### Criar novo projeto (caso queira fazer do zero).
+Após instalar o Node.js, abrir o cmd ou terminal e executar o comando `npm install express-generator -g` para instalar o Express. <br>
+Para criar um novo projeto, basta executar `express nome_do_projeto`. <br>
+
+Uma dica é executar antes o comando `express -h` para criar um projeto com as opções que desejar. 
+Por exemplo `express --git --ejs nome_do_projeto` que cria um .gitignore e a os arquivos da view em formato ejs(o padrão é .jade). <br>
+Após a criação, entre pelo terminal ou cmd na pasta do projeto criado e execute `npm install`. <br>
+Com o projeto criado e os módulos instalados, basta executar `npm start` e acessar `http://localhost:3000` para verificar o funcionamento do seu projeto.
+
 ## Viabilidade da Solução
 
 De acordo com a visão que tivemos ao construir esse projeto, podemos destacar os seguintes pontos:
@@ -70,15 +79,6 @@ Podem ser implementadas funcionalidades adicionais, como notificações por SMS 
 * Node.js em inglês [Node.js Docs](https://nodejs.org/en/docs/)  <br>
 * Express em português [Express](http://expressjs.com/pt-br/)
 * Nodemailer em inglês [NodeMailer](https://nodemailer.com/about/)
-
-### Criar novo projeto (caso queira fazer do zero).
-Após instalar o Node.js, abrir o cmd ou terminal e executar o comando `npm install express-generator -g` para instalar o Express. <br>
-Para criar um novo projeto, basta executar `express nome_do_projeto`. <br>
-
-Uma dica é executar antes o comando `express -h` para criar um projeto com as opções que desejar. 
-Por exemplo `express --git --ejs nome_do_projeto` que cria um .gitignore e a os arquivos da view em formato ejs(o padrão é .jade). <br>
-Após a criação, entre pelo terminal ou cmd na pasta do projeto criado e execute `npm install`. <br>
-Com o projeto criado e os módulos instalados, basta executar `npm start` e acessar `http://localhost:3000` para verificar o funcionamento do seu projeto.
 
 ## Integrantes do Projeto
 
