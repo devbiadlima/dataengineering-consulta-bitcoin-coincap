@@ -19,9 +19,6 @@ Ideal para aplicações em tempo real com troca intensa de dados através de dis
 * [Email_Remetente](alertabitcoincap@outlook.com)
 * [Nodemailer](https://nodemailer.com/about/)
   
-## Desvantagens
-O Express cria por padrão o projeto com view em `.jade`, sendo que mudaram para `.pug`.
-
 ## Principais vantagens
 * V8 JavaScript Engine: é o interpretador de JavaScript open source implementado pelo Google em C++ e utilizado pelo Chrome.<br>
 * Single threaded: Embora isso possa parecer uma desvantagem, o que se percebe ao desenvolver com Node.js é que isso simplifica extremamente a construção da aplicação. <br>
@@ -32,6 +29,9 @@ ou falha dessas tarefas ocorrem através de uma função de callback.<br>
 e permitem trafegar dados através de uma única conexão bi-direcional,
 tratando as mensagens via eventos no JavaScript. <br>
 * Comunidade Ativa
+
+## Desvantagens
+O Express cria por padrão o projeto com view em `.jade`, sendo que mudaram para `.pug`.
   
 ## Como utilizar
 
